@@ -1,5 +1,7 @@
 # EIP-AUTO-STAR
 
+> Warning, the API is very very bad so it takes quite a long time, don't worry and leave it turn on background !
+
 ## Introduction
 
 Welcome to EIP-AUTO-STAR! This tool automates your starring process supporting your city !
