@@ -1,0 +1,2 @@
+# EIP-AUTO-STAR
+Vive P2P
