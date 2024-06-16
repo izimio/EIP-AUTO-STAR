@@ -52,12 +52,6 @@ auto_star() {
     local project_ids
     project_ids=$(echo "$projects" | jq -r '.results[] | select(.ownerCity.name == "Lyon" ) | select(.starred | not) | .id')
 
-    count=$(echo "$project_ids" | wc -w)
-    if [ $count -eq 1 ]; then
-        echo "🌟 All projects are already starred !"
-        exit 0
-    fi
-
     for id in $project_ids; do
         name=$(echo "$projects" | jq -r --arg id "$id" '.results[] | select(.id == ($id | tonumber)) | .name')
         echo "🌟 Starring project $name"
